@@ -1,0 +1,267 @@
+* {
+    padding: 0%;
+    margin: 0%;
+    font-family: 'Quicksand', sans-serif;
+    color: #333;
+}
+header {
+    height:70px;
+    
+}
+header h1 {
+    
+    display: block;
+    float: left;
+    padding: 15px 24px;
+    text-transform: uppercase;
+}
+header h1 a {
+    transition: .3s;
+}
+header h1 a:hover {
+    color: #f84744;
+}
+
+header ul {
+   
+    float: right;
+}
+
+header ul li {
+    
+    padding: 21px ;
+    display: inline-block;
+}
+header ul li a {
+    transition: .3s;
+}
+header ul li a:hover {
+    color: #f84744;
+}
+a {
+    text-decoration: none;
+}
+.container {
+    width: 90%;
+    margin: 0 auto;
+    
+}
+.container ::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+.mobile-menu{
+
+    float: right;
+    display: none; 
+    padding: 18px;
+    
+}
+.mobile-menu :hover {
+    cursor: pointer;
+}
+#check {
+    display: none;
+}
+.sidebar {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: -300px;
+    width: 300px;
+    background-color: rgba(87, 23, 172, 0.9); 
+    transition: .3s;
+}
+.sidebar ul li a {
+    color: #fff;
+}
+.sidebar ul li {
+    padding: 24px;
+    transition: .3s;
+    transition-property: background-color ;
+
+}
+.sidebar ul li:hover {
+    background-color: #9b9bcc;
+} 
+#check:checked ~ .sidebar {
+    left: 0;
+}
+.banner {
+    background-color: #3b0c88;
+    
+}
+section {
+    padding: 50px;
+}
+.banner img {
+    width: 180px;
+    border-radius: 20px;
+    box-shadow: 0 5px 10px rgb(31, 20, 20);
+}
+.banner h2,
+.banner p {
+    color: #ddd;
+}
+section .container h3 {
+     padding-bottom: 20px;
+     text-align: center;
+     margin-top: 20px;
+}
+ 
+
+
+
+
+section .container .strip-grey {
+    width: 15%;
+    height: 5px;
+    background-color: rgb(230, 230, 230);
+    margin: 0px auto 20px auto;
+}
+
+section .container .strip-grey .strip {
+    width: 40%;
+    height: 5px;
+    background-color: #f84744;
+    margin: 0px auto 20px auto;
+}
+/* section h3 {
+     padding-bottom: 20px;
+     text-align: center;
+     align-items: center;
+     margin-top: 20px;
+     padding-left: 45px;
+     margin-bottom: 20px;
+     position: relative;
+} */
+
+/* section h3::before {
+    content:'';
+    display: block;
+    position: absolute;
+    bottom: 0;
+    width: 180px;
+    height: 5px;
+    background-color: #ddd;
+    left: calc(50% - 60px);
+}
+
+section h3::after {
+    content:'';
+    display: block;
+    position: absolute;
+    bottom: 0;
+    width: 90px;
+    height: 5px;
+    background-color: rgb(236, 9, 9);
+    left: calc(50% - 20px);
+} */
+
+#about p {
+    text-align: center;
+    text-indent: 30px;
+    line-height: 25px;
+    margin-bottom: 15px;
+}
+
+
+
+
+#skills {
+    background-color: #f9f9f9;
+}
+#skills .bar {
+    height: 30px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    margin:  5px 0 20px 0;
+    box-shadow: 0 5px 10px rgb(192, 161, 161);
+    
+
+}
+.bar .nilai {
+    height: 30px;
+    background-color: #2d16ad;
+    display: inline-block;
+    color: rgb(252, 252, 252);
+    text-align: center ;
+    box-shadow: 0 5px 10px rgb(83, 80, 82);
+}
+.html {
+    width: 80%;
+}
+.css {
+    width: 60%;
+} 
+.javascript {
+    width: 70%;
+}
+.corel {
+    width: 90%;
+}
+.col-4 {
+    width: 25%;
+    box-sizing:  border-box;
+    padding: 5px;
+    float: left;
+    text-align: center;
+    margin-bottom: 15px;
+    
+}
+.col-4 img {
+    width: 100%;
+    border-radius: 3%;
+    box-shadow: 0 5px 10px rgb(131, 94, 117);
+
+}
+.col-4 a:hover img {
+    transform: scale(1.5);
+}
+
+section h3 {
+    padding-bottom: 20px;
+    text-align: center;
+    margin-top: 20px; 
+}
+
+#contact .container {
+    display: flex;
+    flex-direction: column;
+    /* text-align: center; */
+}
+
+#contact .container .content-contact {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+footer {
+    background-color: #333;
+    padding: 50px;
+    text-align: center;
+}
+
+footer small{
+    color: #fff;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+
+@media (max-width: 768px) { 
+    .mobile-menu {
+        display: block;
+    }
+    header ul {
+        display: none;
+    }
+    .col-4 {
+        width: 50%;
+    }
+}
