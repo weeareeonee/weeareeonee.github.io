@@ -214,10 +214,12 @@ section h3::after {
     width: 100%;
     border-radius: 3%;
     box-shadow: 0 5px 10px rgb(131, 94, 117);
+    transition: .5s
 
 }
 .col-4 a:hover img {
     transform: scale(1.5);
+    transition: .5s
 }
 
 section h3 {
